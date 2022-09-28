@@ -25,7 +25,22 @@ var brittanisBirthYear = 1986;
   Using an if statement and a comparison operator, create code that will check if Amy or Brittani is older, and then console.log '{name} is older'. Hint: Consider what will happen if they are the same age. Handle this situation.
 */
 
-//CODE HERE
+let arr = [amysAge, brittanisAge]
+let min = Infinity
+let max = -Infinity
+
+for(let i=0; i<arr.length; i++){
+  if(arr[i] > max){
+    max = arr[i]
+    if(max = 34){
+  b = brittani
+} else if(max = 29) {
+a = amy
+}
+console.log(max)
+  }
+}
+
 
 ////////// PROBLEM 3 //////////
 
