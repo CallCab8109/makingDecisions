@@ -25,21 +25,16 @@ var brittanisBirthYear = 1986;
   Using an if statement and a comparison operator, create code that will check if Amy or Brittani is older, and then console.log '{name} is older'. Hint: Consider what will happen if they are the same age. Handle this situation.
 */
 
-let arr = [amysAge, brittanisAge]
-let min = Infinity
-let max = -Infinity
+let x = amysAge
+let y = brittanisAge
+if(x > y){
+  console.log('Amy is older') 
+ } else if(y > x) {
+  console.log('Brittani is older')
+}
 
-for(let i=0; i<arr.length; i++){
-  if(arr[i] > max){
-    max = arr[i]
-    if(max = 34){
-  b = brittani
-} else if(max = 29) {
-a = amy
-}
-console.log(max)
-  }
-}
+
+
 
 
 ////////// PROBLEM 3 //////////
@@ -48,7 +43,13 @@ console.log(max)
   Using an if statement and a comparison operator, create code that will check if Amy and Brittani were born in the same year. If they were, console.log 'Amy & Brittani were born in the same year'. If they were not, console.log 'Amy & Brittani were not born in the same year'
 */
 
-//CODE HERE
+let a = amysBirthYear
+let b = brittanisBirthYear
+if(a === b){
+  console.log('Amy & Brittani were born in the same year')
+}else if(a !== b){
+  console.log('Amy and Brittani were not born in the same year')
+}
 
 ////////// PROBLEM 4 //////////
 
@@ -60,7 +61,22 @@ let rain = true;
   If it is 80 degrees or above, and raining, one should wear a t-shirt and take an umbrella. If it is between 60 and 80 degrees, and raining, one should wear a rain-jacket. If it is 60 degrees or below, one should wear a jacket and carry an umbrella. Come up with your own clothing suggestions based on those temperature parameters when it is not raining.
 */
 
-//CODE HERE
+if (temperature > 80 && rain) {
+  console.log('Jarvis says to wear a t-shirt and bring an umbrella with you')
+} else if (temperature > 60 && rain) {
+  console.log('jarvis has a  rain jacket for you at the door')
+} else if (temperature < 60 && rain) {
+  console.log('Jarvis says to grab your jacket and that you\'ll regret leaving your umbrella in the car')
+} else if (temperature > 80 && !rain) {
+  console.log('it is going to be hot today so dress accordingly')
+} else if (temperature > 60 && !rain) {
+  console.log('it\s a little brisk today, i reccomend a jacket and pants')
+} else {
+  console.log(' it\ll be quite cold today, dress warmly!')
+}
+
+//i had to look at the solutions page for this one to figure out what i was doing wrong as it was after hours
+//once i understood i did it on my own and just double checked against it 
 
 ////////// PROBLEM 5 //////////
 
